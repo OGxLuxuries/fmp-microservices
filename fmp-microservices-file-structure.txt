@@ -1,0 +1,40 @@
+/fmp-microservices
+├── .env
+├── docker-compose.yml
+├── README.md
+├── services/
+│   ├── market-data/
+│   │   ├── Dockerfile
+│   │   ├── requirements.txt
+│   │   ├── app/
+│   │   │   ├── __init__.py
+│   │   │   ├── main.py
+│   │   │   ├── config.py
+│   │   │   ├── routes/
+│   │   │   │   ├── __init__.py
+│   │   │   │   └── quotes.py
+│   │   │   └── utils/
+│   │   │       ├── __init__.py
+│   │   │       └── cache.py
+│   ├── company-info/
+│   │   ├── Dockerfile
+│   │   ├── requirements.txt
+│   │   ├── app/
+│   │   │   ├── __init__.py
+│   │   │   ├── main.py
+│   │   │   ├── config.py
+│   │   │   └── routes/
+│   │   │       ├── __init__.py
+│   │   │       └── company.py
+│   └── financial-statements/
+│       ├── Dockerfile
+│       ├── requirements.txt
+│       ├── app/
+│       │   ├── __init__.py
+│       │   ├── main.py
+│       │   ├── config.py
+│       │   └── routes/
+│       │       ├── __init__.py
+│       │       └── statements.py
+└── gateway/
+    └── traefik.yml
